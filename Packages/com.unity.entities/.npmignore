@@ -1,0 +1,4 @@
+.npmignore
+Unity.Entities.CodeGen.Tests/LambdaJobsPostProcessorIntegrationTests.cs
+Unity.Entities.CodeGen.Tests/LambdaJobsPostProcessorIntegrationTests.cs.meta
+Unity.Entities.CodeGen.Tests/.tools/ilspycmd.exe
