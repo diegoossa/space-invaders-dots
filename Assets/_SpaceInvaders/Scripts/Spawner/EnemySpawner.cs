@@ -22,6 +22,7 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+        //var parent = entityManager.CreateEntity(typeof(EnemyHorde), typeof(Translation), typeof(Parent));
 
 
         Entity[] enemyPrefabs = new Entity[EnemyLines.Length];

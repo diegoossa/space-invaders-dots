@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5727665647473173788
+--- !u!1 &1703399804234771934
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5703466605358666598}
-  - component: {fileID: 7020270997367274034}
-  - component: {fileID: 619050555973993124}
-  - component: {fileID: -8593732929486092162}
-  - component: {fileID: 8983042407379571770}
-  - component: {fileID: 1761023996493138730}
+  - component: {fileID: 9017794573131523430}
+  - component: {fileID: 5103254100831514440}
+  - component: {fileID: 6217392241833757431}
   m_Layer: 0
-  m_Name: Invader_2
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5703466605358666598
+--- !u!4 &9017794573131523430
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5727665647473173788}
+  m_GameObject: {fileID: 1703399804234771934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.117677, y: 10.153195, z: -0.12653065}
-  m_LocalScale: {x: 1, y: 1, z: 3.5602899}
+  m_LocalPosition: {x: -0.026, y: -0.093, z: 0}
+  m_LocalScale: {x: 0.9764822, y: 0.9764822, z: 3}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 5703466605358666598}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7020270997367274034
+--- !u!33 &5103254100831514440
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5727665647473173788}
+  m_GameObject: {fileID: 1703399804234771934}
   m_Mesh: {fileID: -4189754055898935893, guid: e7896fd13c3f547fe830d4d48cdaf0ea, type: 3}
---- !u!23 &619050555973993124
+--- !u!23 &6217392241833757431
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5727665647473173788}
+  m_GameObject: {fileID: 1703399804234771934}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -61,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1f4f62686cdfd48fcb5934ccc0ac4294, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,6 +79,40 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &5727665647473173788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5703466605358666598}
+  - component: {fileID: -8593732929486092162}
+  - component: {fileID: 8983042407379571770}
+  - component: {fileID: 1761023996493138730}
+  m_Layer: 0
+  m_Name: Invader_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5703466605358666598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5727665647473173788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9017794573131523430}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-8593732929486092162
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,13 +9,13 @@ public class EnemyMovementSystem : JobComponentSystem
 {
     private static float movementDirection = 1f;
     private static bool isAdvancing = false;
-    private static float timeAdvancing = 5f;
+    private static float timeAdvancing = 0.5f;
 
-    struct EnemyMovementSystemJob : IJobForEach<Translation, Enemy, MovementSpeed, Boundaries>
+    struct EnemyMovementSystemJob : IJobForEach<Translation, EnemyHorde, MovementSpeed, Boundaries>
     {
         public float deltaTime;
 
-        public void Execute(ref Translation translation, [ReadOnly] ref Enemy enemy, [ReadOnly] ref MovementSpeed movementSpeed, [ReadOnly] ref Boundaries boundaries)
+        public void Execute(ref Translation translation, [ReadOnly] ref EnemyHorde enemy, [ReadOnly] ref MovementSpeed movementSpeed, [ReadOnly] ref Boundaries boundaries)
         {
             var xTranslation = translation.Value.x;
             var yTranslation = translation.Value.y;
@@ -42,7 +42,7 @@ public class EnemyMovementSystem : JobComponentSystem
                 timeAdvancing -= deltaTime;
                 if (timeAdvancing < 0)
                 {
-                    timeAdvancing = 5f;
+                    timeAdvancing = 0.5f;
                     isAdvancing = false;
                 }
             }
